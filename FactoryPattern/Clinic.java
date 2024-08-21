@@ -47,5 +47,6 @@ public class Clinic {
                 System.out.println(petRecords.getPet().toString()+ "\n");
             }
         }
+        scan.close();
     }
 }   
