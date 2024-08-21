@@ -15,13 +15,29 @@ public class Clinic {
         Pet pet;
 
         switch (choice) {
-            case 1: pet = new Cat();
-            petRecords.setPetId("d1");
-            petRecords.setPetName("Muning");
+            case 1: pet = new Dog();
+            petRecords.setPetName("Bantay");
+            petRecords.setPetId("D01");
             petRecords.setPet(pet);
-            ((Cat) pet).setNoOfLives(2);
+            ((Dog) pet).setBreed("Labrador");;
+            break;
+            case 2: pet = new Cat();
+            petRecords.setPetName("Muning");
+            petRecords.setPetId("C01");
+            petRecords.setPet(pet);
+            ((Cat) pet).setNoOfLives(9);
+            break;
+            default:
+            System.out.println("Herrera, Angelo Robee");
+            System.out.println("3BSCS-1");
+            break;
         }
-        
 
+        System.out.println("Type: " + petRecords.getPet().getClass().getSimpleName());
+        System.out.println("Name: " + petRecords.getPetName());
+        System.out.println("Pet ID: " + petRecords.getPetId());
+        System.out.println("Sound of the " + petRecords.getPet().getClass().getSimpleName() + " is " + petRecords.getPet().makesound());
+        System.out.println("Play mode: " + petRecords.getPet().play());
+        System.out.println(petRecords.getPet().toString());
     }
-}
+}   

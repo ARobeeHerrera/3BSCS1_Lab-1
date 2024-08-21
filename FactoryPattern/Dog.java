@@ -21,4 +21,7 @@ public class Dog implements Pet {
         return "Arf Arf!";
     }
 
+    public String toString() {
+        return "Breed: " + breed;
+    }
 }

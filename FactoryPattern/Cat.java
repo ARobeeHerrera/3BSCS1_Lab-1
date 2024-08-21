@@ -20,4 +20,8 @@ public class Cat implements Pet {
     public String makesound() {
         return "Meow Meow!";
     }
+
+    public String toString() {
+        return "No of Lives: "+Integer.toString(noOfLives);
+    }
 }
